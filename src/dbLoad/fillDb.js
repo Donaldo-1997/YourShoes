@@ -11,6 +11,8 @@ const fillDB = async ()=>{
             const shoes = await infoApi()
             // console.log(shoes);
 
+
+            //para asociar cada producto con la marca
             shoes.forEach(async product => {
                 const productCreated = await Product.create(product)           
 
